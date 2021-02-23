@@ -21,13 +21,13 @@
 
 @media(max-width: 1080px) {
   html {
-    font-size: 87.5%;
+    font-size: 93.75%;
   }
 }
 
 @media(max-width: 720px) {
   html {
-    font-size: 93.75%;
+    font-size: 87.5%;
   }
 }
 
@@ -39,7 +39,7 @@ body {
 
 body, input, textarea, button {
   font-family: 'Inter', serif;
-  font-size: 16rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -50,14 +50,4 @@ button {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.container {
-  height: 100vh;
-  max-width: 992px;
-  margin: 0 auto;
-  padding: 2.5rem 2rem;
-
-  display: flex;
-  flex-direction: column;
 }
