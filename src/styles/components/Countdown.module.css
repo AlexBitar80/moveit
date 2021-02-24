@@ -60,6 +60,10 @@
   transition: background-color 0.3s;
 }
 
+.countdownButton img {
+  margin-left: 0.7rem;
+}
+
 .countdownButton:not(:disabled):hover {
   background: var(--blue-dark);
 }
@@ -80,4 +84,5 @@
   background: var(--white);
   color: var(--text);
   cursor: not-allowed;
+  border-bottom: 4px solid var(--green);
 }
