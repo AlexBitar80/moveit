@@ -2,9 +2,9 @@
   Moveit - React/Next
 </h2>
 
-<h5 align="center">
+<h4 align="center">
   Projeto desenvolvido durante a 4,° edição do evento Next Level Week feito pela <a href="https://app.rocketseat.com.br/dashboard">Rocketseat</a>
-</h5>
+</h4>
 
 <br/>
 
