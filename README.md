@@ -31,7 +31,9 @@ O moveit é uma plataforma para organizar períodos de foco em uma tarefa espec�
 -  [React.js](https://pt-br.reactjs.org/)
 -  [Next.js](https://nextjs.org/)
 
-## :tada: Como executar
+## :tada: Como executar na sua máquina
+
+Para clonar e rodar esse projeto você vai precisar do [Node](https://nodejs.org/en/) em uma versão LTS, do [Yarn](https://yarnpkg.com/) ou do [Npm](https://www.npmjs.com/get-npm) e do [Git](https://git-scm.com/) instalado na sua máquina.
 
 ```bash
 # Faça o clone deste repositório para qualquer pasta de sua preferencia
@@ -46,3 +48,7 @@ $ yarn || npm install
 # use esses comandos para rodar o Projeto
 $ yarn dev || npm run dev
 ```
+
+## :confetti_ball: Este projeto está no ar!
+
+Para ver o projeto funcional acesse <a href="https://moveit-weld-three.vercel.app/">aqui</a>
