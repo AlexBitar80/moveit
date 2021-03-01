@@ -7,8 +7,9 @@ import { ExperienceBar } from '../components/ExperienceBar';
 import { Profile } from '../components/Profile';
 import { ChallengeBox } from '../components/ChallengeBox';
 import { CountdownProvider } from '../context/CountdownContext';
+import { Header } from '../components/Header';
 
-import styles from '../styles/pages/Home.module.css';
+import { Container } from '../styles/pages/Home';
 
 interface HomeProps {
   level: number;
@@ -23,10 +24,12 @@ export default function Home(props: HomeProps) {
       currentExperience={props.currentExperience}
       challengesCompleted={props.challengesCompleted}
     >
-      <div className={styles.container}>
+      <Container>
         <Head>
           <title>Início | Move.it</title>
         </Head>
+
+        <Header />
 
         <ExperienceBar />
 
@@ -42,7 +45,7 @@ export default function Home(props: HomeProps) {
             </div>
           </section>
         </CountdownProvider>
-      </div>
+      </Container>
     </ChallengesProvider>
   );
 }
