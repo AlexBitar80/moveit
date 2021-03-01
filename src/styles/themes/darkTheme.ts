@@ -7,11 +7,13 @@ export default {
     grayLine: '#dcdde0',
     text: '#fff',
     title: '#f8f8f2',
-    primaryRed: '#e83f5b',
-    redHover: '#ba181b',
-    primaryGreen: '#50fa7b',
-    greenHover: '#4cd62b',
-    blueDark: '#4953b8',
-    blueTwitter: '#2aa9e0',
+    primaryRed: '#E83F5B',
+    primaryGreen: '#4CD62B',
+    blueDark: '#4953B8',
+    blueTwitter: '#5965E0',
+  },
+
+  grandient: {
+    background: 'rgba(85, 87, 96, 0.5);',
   },
 };
