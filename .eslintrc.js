@@ -28,6 +28,7 @@ module.exports = {
         'plugin:prettier/recommended', // Prettier plugin
       ],
       rules: {
+        '@typescript-eslint/no-empty-interface': 'off',
         'prettier/prettier': ['error', {}, { usePrettierrc: true }], // Includes .prettierrc.js rules
 
         '@typescript-eslint/explicit-module-boundary-types': 'off',
