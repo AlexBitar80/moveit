@@ -1,5 +1,8 @@
 import { useContext } from 'react';
 import { CountdownContext } from '../context/CountdownContext';
+
+import { FiChevronRight, FiX, FiCheck } from 'react-icons/fi';
+
 import {
   CountdownContainer,
   CountdownButton,
@@ -35,19 +38,19 @@ export function Countdown() {
       {hasFinished ? (
         <CountdownButton disabled>
           Ciclo encerrado
-          <img src="icons/check_circle.svg" alt="check" />
+          <FiCheck size={28} />
         </CountdownButton>
       ) : (
         <>
           {isActive ? (
             <CountdownCancelButton type="button" onClick={resetCountdonw}>
               Abandonar ciclo
-              <img src="icons/close.svg" alt="play" />
+              <FiX size={28} />
             </CountdownCancelButton>
           ) : (
             <CountdownButton type="button" onClick={startCountdonw}>
               Iniciar um ciclo
-              <img src="icons/play_arrow.svg" alt="play" />
+              <FiChevronRight size={28} />
             </CountdownButton>
           )}
         </>
