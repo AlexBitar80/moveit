@@ -8,8 +8,10 @@ export const Container = styled.div`
   bottom: 100%;
   flex-direction: row;
   justify-content: space-between;
-  width: 8rem;
+  width: 6.5rem;
   top: 30px;
 `;
 
-export const SwitchTheme = styled(Switch)``;
+export const SwitchTheme = styled(Switch)`
+  margin-right: 1.25rem;
+`;

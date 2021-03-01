@@ -22,7 +22,7 @@ export const Container = styled.div`
     p {
       font-size: 1rem;
       margin-top: 0.5rem;
-      color: ${({ theme }) => theme.colors.text};
+      color: ${({ theme }) => theme.colors.title};
 
       img {
         margin-right: 0.4rem;

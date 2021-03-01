@@ -1,3 +1,4 @@
+import { shade } from 'polished';
 import styled from 'styled-components';
 
 export const ChallengeBoxContainer = styled.div`
@@ -67,7 +68,7 @@ export const ChallengeActive = styled.div`
     strong {
       font-size: 2rem;
       font-weight: 600;
-      color: ${({ theme }) => theme.colors.text};
+      color: ${({ theme }) => theme.colors.title};
 
       margin: 1.5rem 0.4rem;
     }
@@ -91,7 +92,7 @@ export const ChallengeActive = styled.div`
         border: 0;
         border-radius: 5px;
 
-        color: ${({ theme }) => theme.colors.text};
+        color: ${({ theme }) => theme.colors.title};
 
         font-size: 1rem;
         font-weight: 600;
@@ -123,7 +124,7 @@ export const ChallengeFailButton = styled.button`
   transition: background-color 0.3s;
 
   &:hover {
-    background: ${({ theme }) => theme.colors.redHover};
+    background: ${({ theme }) => shade(0.25, theme.colors.primaryRed)};
   }
 `;
 
@@ -145,6 +146,6 @@ export const ChallengeSucceededButton = styled.button`
   transition: background-color 0.3s;
 
   &:hover {
-    background: ${({ theme }) => theme.colors.greenHover};
+    background: ${({ theme }) => shade(0.25, theme.colors.primaryGreen)};
   }
 `;

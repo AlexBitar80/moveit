@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Overlay = styled.div`
-  background: rgba(242, 243, 245, 0.8);
+  background: ${({ theme }) => theme.grandient.background};
   position: fixed;
   top: 0;
   bottom: 0;
@@ -38,7 +38,7 @@ export const Container = styled.div`
 
   p {
     font-size: 1.25rem;
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.title};
     margin-top: 0.25rem;
   }
 

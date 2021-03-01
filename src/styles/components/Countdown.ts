@@ -1,3 +1,4 @@
+import { shade } from 'polished';
 import styled from 'styled-components';
 
 export const CountdownContainer = styled.div`
@@ -52,12 +53,17 @@ export const CountdownButton = styled.button`
   border: 0;
   border-radius: 5px;
 
-  background: ${({ theme }) => theme.colors.box};
+  background: ${({ theme }) => shade(0.25, theme.colors.blueTwitter)};
 
   color: ${({ theme }) => theme.colors.text};
 
   font-size: 1.25rem;
   font-weight: 600;
+
+  svg {
+    margin-left: 0.7rem;
+    color: ${({ theme }) => theme.colors.text};
+  }
 
   transition: background-color 0.3s;
 
@@ -74,6 +80,15 @@ export const CountdownButton = styled.button`
     color: ${({ theme }) => theme.colors.text};
     cursor: not-allowed;
     border-bottom: 4px solid ${({ theme }) => theme.colors.primaryGreen};
+
+    svg {
+      margin-left: 0.7rem;
+      color: ${({ theme }) => theme.colors.text};
+    }
+
+    &:disabled:hover {
+      background: ${({ theme }) => shade(0.25, theme.colors.blueDark)};
+    }
   }
 `;
 
@@ -102,11 +117,12 @@ export const CountdownCancelButton = styled.button`
 
   transition: background-color 0.3s;
 
-  img {
+  svg {
     margin-left: 0.7rem;
+    color: ${({ theme }) => theme.colors.text};
   }
 
   &:hover {
-    background: ${({ theme }) => theme.colors.redHover};
+    background: ${({ theme }) => shade(0.25, theme.colors.primaryRed)};
   }
 `;
