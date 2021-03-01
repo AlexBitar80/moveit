@@ -1,7 +1,13 @@
 import { useContext } from 'react';
 import { ChallengesContext } from '../context/ChallengesContext';
 import { CountdownContext } from '../context/CountdownContext';
-import styles from '../styles/components/ChallengeBox.module.css';
+import {
+  ChallengeBoxContainer,
+  ChallengeActive,
+  ChallengeSucceededButton,
+  ChallengeFailButton,
+  ChallengeNotActive,
+} from '../styles/components/ChallengeBox';
 
 export function ChallengeBox() {
   const { activeChallenge, resetChallenge, completeChallenge } = useContext(
@@ -20,9 +26,9 @@ export function ChallengeBox() {
   }
 
   return (
-    <div className={styles.challengeBoxContainer}>
+    <ChallengeBoxContainer>
       {activeChallenge ? (
-        <div className={styles.challengeActive}>
+        <ChallengeActive>
           <header>Ganhe {activeChallenge.amount} xp</header>
 
           <main>
@@ -32,24 +38,19 @@ export function ChallengeBox() {
           </main>
 
           <footer>
-            <button
-              type="button"
-              onClick={handleChallengeFailed}
-              className={styles.challengeFailButton}
-            >
+            <ChallengeFailButton type="button" onClick={handleChallengeFailed}>
               Falhei
-            </button>
-            <button
+            </ChallengeFailButton>
+            <ChallengeSucceededButton
               type="button"
-              className={styles.challengeSucceededButton}
               onClick={handleChallengeSucceeded}
             >
               Completei
-            </button>
+            </ChallengeSucceededButton>
           </footer>
-        </div>
+        </ChallengeActive>
       ) : (
-        <div className={styles.challengeNotActive}>
+        <ChallengeNotActive>
           <strong>
             Inicie um ciclo para receber desafios a serem completados
           </strong>
@@ -57,8 +58,8 @@ export function ChallengeBox() {
             <img src="icons/level-up.svg" alt="level up" />
             Complete-os e ganhe experiência e avance de leve.
           </p>
-        </div>
+        </ChallengeNotActive>
       )}
-    </div>
+    </ChallengeBoxContainer>
   );
 }

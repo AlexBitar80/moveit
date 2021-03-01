@@ -1,6 +1,10 @@
 import { useContext } from 'react';
 import { CountdownContext } from '../context/CountdownContext';
-import style from '../styles/components/Countdown.module.css';
+import {
+  CountdownContainer,
+  CountdownButton,
+  CountdownCancelButton,
+} from '../styles/components/Countdown';
 
 export function Countdown() {
   const {
@@ -16,7 +20,7 @@ export function Countdown() {
 
   return (
     <div>
-      <div className={style.CountdonwContainer}>
+      <CountdownContainer>
         <div>
           <span>{minuteLeft}</span>
           <span>{minuteRight}</span>
@@ -26,33 +30,25 @@ export function Countdown() {
           <span>{secondLeft}</span>
           <span>{secondRight}</span>
         </div>
-      </div>
+      </CountdownContainer>
 
       {hasFinished ? (
-        <button disabled className={style.countdownButton}>
+        <CountdownButton disabled>
           Ciclo encerrado
           <img src="icons/check_circle.svg" alt="check" />
-        </button>
+        </CountdownButton>
       ) : (
         <>
           {isActive ? (
-            <button
-              type="button"
-              onClick={resetCountdonw}
-              className={`${style.countdownButtonActive} ${style.countdownButton}`}
-            >
+            <CountdownCancelButton type="button" onClick={resetCountdonw}>
               Abandonar ciclo
               <img src="icons/close.svg" alt="play" />
-            </button>
+            </CountdownCancelButton>
           ) : (
-            <button
-              type="button"
-              onClick={startCountdonw}
-              className={style.countdownButton}
-            >
+            <CountdownButton type="button" onClick={startCountdonw}>
               Iniciar um ciclo
               <img src="icons/play_arrow.svg" alt="play" />
-            </button>
+            </CountdownButton>
           )}
         </>
       )}
