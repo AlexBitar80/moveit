@@ -27,9 +27,12 @@ O moveit é uma plataforma para organizar períodos de foco em uma tarefa espec�
 
 ## :rainbow: Tecnologias usadas nessa aplicação
 
--  [Typescript](https://www.typescriptlang.org/)
--  [React.js](https://pt-br.reactjs.org/)
--  [Next.js](https://nextjs.org/)
+-  [typescript](https://www.typescriptlang.org/)
+-  [react.js](https://pt-br.reactjs.org/)
+-  [next.js](https://nextjs.org/)
+-  [react-icons](https://react-icons.github.io/react-icons/)
+-  [styled-components](https://styled-components.com/)
+-  [react-switch](https://www.npmjs.com/package/react-switch)
 
 ## :tada: Como executar na sua máquina
 
