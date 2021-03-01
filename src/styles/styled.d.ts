@@ -9,11 +9,13 @@ interface Theme {
     text: string;
     title: string;
     primaryRed: string;
-    redHover: string;
     primaryGreen: string;
-    greenHover: string;
     blueDark: string;
     blueTwitter: string;
+  };
+
+  grandient: {
+    background: string;
   };
 }
 
