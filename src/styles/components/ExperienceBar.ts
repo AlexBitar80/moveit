@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Header = styled.header`
   display: flex;
   align-items: center;
+  width: 100%;
+  margin: 40px 0 0 0;
 
   span {
     font-size: 1rem;
@@ -27,5 +29,9 @@ export const Header = styled.header`
     height: 4px;
     border-radius: 4px;
     background: ${({ theme }) => theme.colors.primaryGreen};
+  }
+
+  @media (max-width: 644px) {
+    margin: 40px 0 40px 0;
   }
 `;

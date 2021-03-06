@@ -49,5 +49,9 @@ export const Container = styled.div`
     background: transparent;
     border: 0;
     font-size: 0px;
+
+    svg {
+      color: ${({ theme }) => theme.colors.title};
+    }
   }
 `;

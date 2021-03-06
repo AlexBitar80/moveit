@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import Switch from 'react-switch';
 
 export const Container = styled.div`
-  position: fixed;
   display: flex;
   right: 0;
   bottom: 100%;

@@ -10,7 +10,7 @@ export default {
     primaryRed: '#E83F5B',
     primaryGreen: '#4CD62B',
     blueDark: '#4953B8',
-    blueTwitter: '#5965E0',
+    blueTwitter: '#6F7AE9',
   },
 
   grandient: {

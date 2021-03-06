@@ -83,11 +83,9 @@ export const ChallengeActive = styled.div`
       gap: 1rem;
 
       button {
-        height: 3rem;
-
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
 
         border: 0;
         border-radius: 5px;
@@ -104,13 +102,16 @@ export const ChallengeActive = styled.div`
         filter: brightness(0.9);
       }
     }
+
+    @media (max-width: 644px) {
+      margin: 30px 0 30px 0;
+    }
   }
 `;
 
 export const ChallengeFailButton = styled.button`
-  height: 3rem;
-  width: 8rem;
-
+  height: 42px;
+  width: 90px;
   border: 0;
   border-radius: 5px;
   margin: 0px 8px 0px 0px;
@@ -129,9 +130,8 @@ export const ChallengeFailButton = styled.button`
 `;
 
 export const ChallengeSucceededButton = styled.button`
-  height: 3rem;
-  width: 8rem;
-
+  height: 42px;
+  width: 90px;
   border: 0;
   border-radius: 5px;
   margin: 0px 0px 0px 8px;

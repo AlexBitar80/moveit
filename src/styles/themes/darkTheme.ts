@@ -2,7 +2,7 @@ export default {
   title: 'dark',
 
   colors: {
-    box: '#6272a4',
+    box: '#495057',
     background: '#282a36',
     grayLine: '#dcdde0',
     text: '#fff',
