@@ -15,6 +15,14 @@ export const ChallengeBoxContainer = styled.div`
   justify-content: center;
 
   text-align: center;
+
+  @media (max-width: 642px) {
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 80px 0;
+  }
 `;
 
 export const ChallengeNotActive = styled.div`
