@@ -1,4 +1,4 @@
-import 'styled-componets';
+import 'styled-components';
 
 interface Theme {
   title: string;
