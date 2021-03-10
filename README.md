@@ -15,9 +15,12 @@
 
   <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/AlexBitar80/moveit?style=social">
 
+  <img alt="GitHub Repo license" src="https://img.shields.io/github/license/AlexBitar80/moveit">
+
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/AlexBitar80/moveit">
 
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/AlexBitar80/moveit">
+
 </p>
 
 ## :dart: O que é o Moveit?
@@ -55,3 +58,7 @@ $ yarn dev || npm run dev
 ## :confetti_ball: Este projeto está no ar!
 
 Para ver o projeto funcional acesse <a href="https://moveit-weld-three.vercel.app/">aqui</a>
+
+## :pushpin: Licença
+
+Este projeto está sob a licença MIT [LICENSE](https://github.com/AlexBitar80/moveit/blob/master/LICENSE) para mais detalhes.
