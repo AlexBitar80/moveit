@@ -18,6 +18,8 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/AlexBitar80/moveit">
 
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/AlexBitar80/moveit">
+
+  <img alt="GitHub Repo license" src="https://img.shields.io/github/license/AlexBitar80/moveit">
 </p>
 
 ## :dart: O que é o Moveit?
