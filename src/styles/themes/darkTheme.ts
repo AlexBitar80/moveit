@@ -13,7 +13,7 @@ export default {
     blueTwitter: '#5965E0',
   },
 
-  grandient: {
+  gradient: {
     background: 'rgba(85, 87, 96, 0.5);',
   },
 };
